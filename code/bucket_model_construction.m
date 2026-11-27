@@ -1,7 +1,7 @@
 function [R, S, I, Q] = bucket_model_construction(num_steps, pn_SNR, power_S, power_I, power_Q)
 % 
 % bucket_model_construction generates state variables R (rainfall), S (soil
-% water content), I (interflow), and Q (runoff) using Eqn. (8) in this
+% water content), I (interflow), and Q (runoff) using Eqs. (4-6) in this
 % paper.
 %
 % Written by Yuhui Zhao (yuhuizhao73@foxmail.com)

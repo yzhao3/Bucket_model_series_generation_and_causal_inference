@@ -5,10 +5,10 @@
 num_steps = 10000; % number of time steps in one simulation
 nsim = 100; % number of simulations
 dt = 1; % time interval
-IF_length = 1000; % sample length adopted for causal inference: 100, 300, 500, 1000, 1500, 2000, 2500, 3000
+IF_length = 3000; % sample length adopted for causal inference: 100, 300, 500, 1000, 1500, 2000, 2500, 3000
 pn_SNR = 10000; % signal-noise-ratio of the process noise added: 2, 3, 4, 5, 10, 20, 50, 100, 10000
 on_SNR = 10; % signal-noise-ratio of the observation noise added: 2, 3, 4, 5, 10, 20, 50, 100, 10000
-on_switch = 1; % 1 (0) for construction with (without) observation noise
+on_switch = 0; % 1 (0) for construction with (without) observation noise
  
 %% Deterministic simulation for the calculation of signal powers, with no 
 %noise added 
@@ -41,7 +41,7 @@ for isim = 1:nsim
                 tmp = varif;
                 tmp(:,[i j]) = [];
                 varif_tmp = [varif(:,j) varif(:,i) tmp];
-                [T21, err90, err95, err99] = multi_causality_est_Huang(varif_tmp, 1);
+                [T21, err90, err95, err99] = multi_causality_est(varif_tmp, 1);
                 multi_T21(i,j) = T21;
                 multi_err(i,j) = err99;
             end
