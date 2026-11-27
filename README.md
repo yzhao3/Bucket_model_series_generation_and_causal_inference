@@ -110,7 +110,7 @@ The output is **not automatically plotted or saved to disk**. Numerical values v
 
 For the bucket-model configuration described in the associated manuscript, expected directed links are `R -> S`, `R -> Q`, `S -> I`, `S -> Q`, `I -> S`, `I -> Q`, and `Q -> I`. Recovery of these links is an empirical validation target; it should not be treated as guaranteed for every short or noisy realization.
 
-## 9. References
+## 8. References
 
 - Ombadi, M., et al. (2020), *Evaluation of Methods for Causal Discovery in Hydrometeorological Systems*, Water Resources Research, 56, e2020WR027251. https://doi.org/10.1029/2020WR027251
 - Liang, X. S. (2021), *Normalized Multivariate Time Series Causality Analysis and Causal Graph Reconstruction*, Entropy, 23, 679. https://doi.org/10.3390/e23060679
